@@ -1,0 +1,9 @@
+.header {
+    text-align: center;
+    background-color:#ffd835;
+    font-family: Papyrus, Arial, Helvetica, sans-serif;
+    color: #333333; 
+    /* color: #1a1a1a; */
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
