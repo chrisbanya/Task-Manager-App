@@ -1,8 +1,9 @@
-import styles from './Header.module.css'
+import styles from "./Header.module.css";
 
-export default function Header () {
-    return <>
-    <h1 className={styles.header}>Task Manager</h1>
-    
+export default function Header() {
+  return (
+    <>
+      <h1 className={styles.header}>Task Manager</h1>
     </>
+  );
 }

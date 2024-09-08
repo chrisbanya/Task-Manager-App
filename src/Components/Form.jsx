@@ -7,17 +7,16 @@ export default function Form({ data, setData, task, setTask }) {
 
   function handleAdd(e) {
     e.preventDefault();
-    if (task.name.trim() === "" ) {
+    // my validations for empty spaces and single chars. add more later...
+    if (task.name.trim() === "") {
       alert("Task cannot be empty");
       return;
-  }
-  else if (task.name.length <= 1) {
-    alert("Task too short");
-    return;
-  }
+    } else if (task.name.trim().length <= 1) {
+      alert("Task too short");
+      return;
+    }
     const newTask = { ...task, id: Date.now() };
-    setData([...data, newTask]);
-    // setData([...data, task]);
+    setData([newTask, ...data]);
     setTask({ name: "", isCompleted: false });
   }
   return (

@@ -1,6 +1,6 @@
 import Tasks from "./Tasks";
 
-export default function TodoItems({ data, setData }) {
+export default function TaskItems({ data, setData }) {
   const sortedTasks = data.slice().sort((a, b) => Number(a.isCompleted) - Number(b.isCompleted))
   return (
     <div>

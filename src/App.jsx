@@ -1,5 +1,5 @@
 import Form from "./Components/Form";
-import TodoItems from "./Components/TodoItems";
+import TaskItems from "./Components/TaskItems";
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
 import "./App.css";
@@ -14,7 +14,7 @@ export default function App() {
     <>
       <Header />
       <Form data={data} setData={setData} task={task} setTask={setTask}/>
-      <TodoItems data={data} setData={setData}  />
+      <TaskItems data={data} setData={setData}  />
       <Footer completedTasks={completedTasks} totalTasks={totalTasks}/>
     </>
   );
