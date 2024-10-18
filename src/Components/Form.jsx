@@ -22,7 +22,7 @@ export default function Form({ data, setData, task, setTask }) {
   return (
     <form className={styles.container}>
       <div className={styles.wrapperDiv}>
-        <div>
+        <div className={styles.inputDiv}>
           <input
             className={styles.inputBox}
             placeholder="Enter task here..."
