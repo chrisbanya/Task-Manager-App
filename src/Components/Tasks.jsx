@@ -1,7 +1,9 @@
 import styles from "./Tasks.module.css";
 export default function Tasks({ tasks, data, setData }) {
   function handleDel(id) {
-    setData(data.filter((value) => value.id !== id));
+    const updatedData = data.filter((value) => value.id !== id);
+    setData(updatedData);
+    localStorage.setItem("tasks", JSON.stringify(updatedData));
   }
   function handleToggle(id) {
     setData(
@@ -12,6 +14,7 @@ export default function Tasks({ tasks, data, setData }) {
       )
     );
   }
+
   const completed = tasks.isCompleted ? styles.strikeThrough : "";
 
   return (
