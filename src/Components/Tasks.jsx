@@ -37,4 +37,4 @@ export default function Tasks({ tasks, data, setData }) {
       <hr className={styles.cBanya} />
     </>
   );
-}
+} 
